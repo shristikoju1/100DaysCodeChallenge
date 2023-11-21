@@ -1,0 +1,41 @@
+<!----Universal Selector------>
+            *{ 
+                color: rgb(12, 3, 56);
+            } 
+<!----Element Selector------>
+            h1{
+                color: aqua;
+            }  
+            p{
+                color : purple;
+            } 
+            button{
+                color:red;
+                background-color: yellow;
+            }
+            body{
+                background-color: rgb(193, 186, 235);
+            }
+<!----ID Selector------> 
+            #headingOne{
+                color: blue;
+            }    
+
+            #headingTwo{
+                color: rgb(250, 0, 209);
+            }  
+ <!----Class Selector------> 
+            .planet{
+                color: black;
+            }
+
+            #box{
+                background-color: #00ff00;
+            }
+     h1,h2,h3{
+        color: red;
+    }
+    /* button{
+        background-color: green;
+    }
+     */
