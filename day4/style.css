@@ -1,0 +1,42 @@
+p{
+    text-align: right;
+}
+h1{
+    text-align: center;
+    text-decoration: red dotted underline;
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+#heading{
+background-color: black;
+color: bisque;
+}
+#id1{
+    text-align: left;
+    text-decoration: none;
+    font-weight: bolder;    /* 900 */
+} 
+#id2{
+    font-weight: bold;
+}
+#id3{
+    font-weight: normal;
+}
+#id4{
+    font-weight: lighter; /* 100 */
+}
+#pixel1{
+    text-align: left;
+    line-height: 50px;
+}
+#pixel2{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#inner{
+    font-size: larger;
+}
+#inner{
+    font-size: smaller;
+}
