@@ -1,0 +1,39 @@
+div{
+    height: 200px;
+    background-color: pink;
+    width: 200px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkmagenta;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /* padding: 1px 2px 3px 4px; --> top, right, bottom, left -->clockwise */
+     margin-top: 50px;
+    margin: 25px;
+    padding: 25px;
+}
+#circle{
+    border-radius: 50%;
+    text-align: center;
+    padding: 25px;
+}
+#set{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+h1{
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: rgb(0, 86, 139);
+        text-align: center;
+        /* border: 20px dotted blueviolet;      width,style,color */
+   
+ } 
+
+
