@@ -1,0 +1,27 @@
+div{
+    background-color: blueviolet;
+    /* display: inline; */
+}
+button{
+    display: block;
+    background-color: aquamarine;
+}
+#box1{
+    background-color: rgb(0,255,0,1)
+}
+#box2{
+    background-color: rgb(0, 255, 0,0.5);
+    /* display: none; */
+    /* visibility: hidden; */
+}
+#box3{
+    background-color: rgb(0, 255, 0, 0.2);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    margin: 25px;
+    display: inline-block;
+   
+}
