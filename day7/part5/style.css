@@ -1,0 +1,57 @@
+/* #box1{
+    height: 100px;
+    width: 200px;
+    background-color: aquamarine;
+    font-size: 20px;
+}
+#box2{
+    height: 50%;
+    width: 50%;
+    background-color: blueviolet;
+    margin-left: 10%;
+    margin-top: 10%;
+   font-size: 2em;  /* two times of parent's font size  */
+   /*  width: 5rem;
+    height: 10vh;  */
+
+ div{
+    height:100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: inline-block;
+}
+body{
+    background-image: url(image.jpg);
+    background-size: cover;
+}
+
+#space1{
+    position: static;
+    top: 160px;
+    
+    z-index: 5;
+    background-image: url(moon.avif);
+    background-size: cover;
+}
+#space2{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    z-index: -1;
+}
+#space3{
+    position: sticky;
+    top: 500px;
+    left: 150px;
+    background-image: url(moon.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#space4{
+    position: fixed;
+    right: 800px;
+    z-index: 1;
+    background-image: url(moon.avif);
+    background-size: auto;
+} 
