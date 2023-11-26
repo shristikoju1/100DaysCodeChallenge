@@ -1,0 +1,24 @@
+div{
+    background-color: deepskyblue;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: steps(5);
+    transition-delay: 1s; */
+    transition: all 3s ease-in-out;
+   /* transform: rotate(45deg); */
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    /* transform: scale(2); */
+}
+div:hover {
+    background-color: rgb(255, 0, 217);
+    color: blueviolet;
+    font-size: 20px;
+    /* transform: scale(2,2); */
+    /* transform: translate(60px, 80px); */
+    transform: skew(90deg);
+}
