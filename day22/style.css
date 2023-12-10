@@ -1,0 +1,11 @@
+#box{
+    height: 300px;
+    width: 100px;
+    background-color: coral;
+    border: 1px solid black;
+}
+
+.para{
+    color: cadetblue;
+    background-color: black;
+}
