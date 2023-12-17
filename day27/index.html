@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+
+        <h2 id="game-status">Game not started</h2>
+
+        <div class="player-div">
+            <div class="player-1">Player 1(X)</div>
+            <div class="player-2">Player 2(0)</div>
+        </div>
+
+        <div class="board">
+            <div class="row row-1">
+                <input id="input-1" onclick="handleInputClick('input-1')" readonly/>
+                <input id="input-2" onclick="handleInputClick('input-2')" readonly/>
+                <input id="input-3" onclick="handleInputClick('input-3')" readonly/>
+            </div>
+
+            <div class="row row-2">
+                <input id="input-4" onclick="handleInputClick('input-4')" readonly/>
+                <input id="input-5" onclick="handleInputClick('input-5')" readonly/>
+                <input id="input-6" onclick="handleInputClick('input-6')" readonly/>
+            </div>
+
+            <div class="row row-3">
+                <input id="input-7" onclick="handleInputClick('input-7')" readonly/>
+                <input id="input-8" onclick="handleInputClick('input-8')" readonly/>
+                <input id="input-9" onclick="handleInputClick('input-9')" readonly/>
+            </div>
+          </div>
+          <button class="reset" onclick="handleReset()">Reset</button>
+
+        </div>
+
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
