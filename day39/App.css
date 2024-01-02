@@ -1,0 +1,15 @@
+h1{
+    font-weight: 900;
+    font-size : 45px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: aqua;
+  }
+  
+  input{
+    width: 100%;
+    
+  }
+  .todo-container{
+    text-align: left;
+  }
