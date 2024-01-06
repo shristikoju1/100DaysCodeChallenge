@@ -2,17 +2,21 @@ let [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
 let timeRef = document.getElementById("display");
 let int = null;
 let lapTimes = [];
-let lapCounter = 1;
+let startTime = null;
 
 document.getElementById("start-btn").addEventListener("click", () => {
     if (int !== null) {
         clearInterval(int);
     }
     int = setInterval(displayTimer, 10);
+        startTime = Date.now(); // Record the start time of the stopwatch
+
 });
 
 document.getElementById("pause-btn").addEventListener("click", () => {
     clearInterval(int);
+        startTime = null; // Reset the start time when paused
+
 });
 
 document.getElementById("reset-btn").addEventListener("click", () => {
@@ -20,7 +24,7 @@ document.getElementById("reset-btn").addEventListener("click", () => {
     [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
     updateDisplay();
     lapTimes = [];
-    lapCounter = 1;
+    startTime = null; // Reset the start time when reset
     updateLapTimes();
 });
 
@@ -53,15 +57,10 @@ function recordLapTime() {
 }
 
 function updateDisplay() {
-    let h = hours < 10 ? "0" + hours : hours;
-    let m = minutes < 10 ? "0" + minutes : minutes;
-    let s = seconds < 10 ? "0" + seconds : seconds;
-    let ms =
-        milliseconds < 10
-            ? "00" + milliseconds
-            : milliseconds < 100
-            ? "0" + milliseconds
-            : milliseconds;
+    let h = hours.toString().padStart(2, '0');
+    let m = minutes.toString().padStart(2, '0');
+    let s = seconds.toString().padStart(2, '0');
+    let ms = milliseconds.toString().padStart(3, '0');
 
     timeRef.textContent = `${h} : ${m} : ${s} : ${ms}`;
 }
@@ -77,7 +76,9 @@ function updateLapTimes() {
 }
 
 function getFormattedTime() {
-    const date = new Date(0);
-    date.setMilliseconds(date.getMilliseconds() + lapCounter * 10);
-    return date.toISOString().substr(11, 11);
+    const formattedHours = hours.toString().padStart(2, '0');
+    const formattedMinutes = minutes.toString().padStart(2, '0');
+    const formattedSeconds = seconds.toString().padStart(2, '0');
+    const formattedMilliseconds = milliseconds.toString().padStart(3, '0');
+    return `${formattedHours}:${formattedMinutes}:${formattedSeconds}.${formattedMilliseconds}`;
 }
