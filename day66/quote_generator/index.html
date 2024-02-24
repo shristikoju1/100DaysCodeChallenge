@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="nav-search">
+        <select id="search-select">
+            <option>All</option>
+            <option value="Science & Technology">Science & Technology</option>
+            <option value="Love & Happiness">Love & Happiness</option>
+            <option value="Motivation">Motivation</option>
+        </select>
+        <input placeholder="Enter genre" id="search-input">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>Quote of the day</h2>
+        
+        <p id="quote">Loading....</p>
+        <small id="author"></small>
+      
+        <div>
+        <button class="btn" id="previous">Previous..</button>
+        <button class="btn" id="random">Random Quote</button>
+        <button class="btn" id="next">Next..</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
